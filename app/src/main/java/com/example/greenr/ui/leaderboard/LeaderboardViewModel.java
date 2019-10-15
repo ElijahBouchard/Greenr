@@ -1,16 +1,16 @@
-package com.example.greenr.ui.slideshow;
+package com.example.greenr.ui.leaderboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class LeaderboardViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public LeaderboardViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is leaderboard fragment");
     }
 
     public LiveData<String> getText() {

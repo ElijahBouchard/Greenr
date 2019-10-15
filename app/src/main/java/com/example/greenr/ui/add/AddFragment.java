@@ -1,4 +1,4 @@
-package com.example.greenr.ui.tools;
+package com.example.greenr.ui.add;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.greenr.R;
 
-public class ToolsFragment extends Fragment {
+public class AddFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private AddViewModel addViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tools, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        addViewModel =
+                ViewModelProviders.of(this).get(AddViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_add, container, false);
+        final TextView textView = root.findViewById(R.id.text_add);
+        addViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
