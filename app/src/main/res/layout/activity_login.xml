@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordSign"
         android:layout_width="290dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
@@ -121,10 +121,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameSign" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernameSign"
         style="@android:style/Widget.AutoCompleteTextView"
         android:layout_width="290dp"
         android:layout_height="48dp"
@@ -176,7 +176,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSign"
         app:layout_constraintVertical_bias="0.055" />
 
     <Button
@@ -203,8 +203,8 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/passwordSign"
+        app:layout_constraintStart_toStartOf="@+id/passwordSign"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
