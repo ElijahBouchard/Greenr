@@ -39,17 +39,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="138dp"
         android:layout_marginLeft="138dp"
-        android:layout_marginTop="82dp"
         android:layout_marginEnd="139dp"
         android:layout_marginRight="139dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="5dp"
         android:text="Join our community!"
         android:textSize="18sp"
         app:fontFamily="@font/josefin_sans_light"
         app:layout_constraintBottom_toTopOf="@id/setUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/createAcctGrph"
@@ -61,7 +60,7 @@
         android:layout_marginEnd="95dp"
         android:layout_marginRight="95dp"
         android:layout_marginBottom="649dp"
-        app:layout_constraintBottom_toTopOf="comm"
+        app:layout_constraintBottom_toTopOf="@id/comm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
