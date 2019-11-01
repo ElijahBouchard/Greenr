@@ -1,5 +1,6 @@
 package com.example.greenr;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +15,8 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         setContentView(R.layout.activity_start);
 
         final Button loginButton = findViewById(R.id.login);
