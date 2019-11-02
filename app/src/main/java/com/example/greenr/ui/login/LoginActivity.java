@@ -23,7 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.greenr.MainActivity;
+import com.example.greenr.HomeActivity;
 import com.example.greenr.R;
 import com.example.greenr.SignUpActivity;
 
@@ -116,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 loadingProgressBar.setVisibility(View.VISIBLE);
 
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
 
                 /*loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());*/
